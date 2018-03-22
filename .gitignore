@@ -1,0 +1,20 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# expo
+.expo/
+
+# dependencies
+/node_modules
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+haste-map-metro-2-456667ce0594b4abf99109a8cefe9a8c
+metro-cache-2ae6f000d1e9faf04db73788658d925fb7837cb5/
