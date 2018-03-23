@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View, Button, Image } from 'react-native';
+
+import styles from '../style';
 
 class Welcome extends Component {
   render() {
@@ -9,13 +11,11 @@ class Welcome extends Component {
     }
 
     return (
-      <View>
-        <Text>Welcome</Text>
-        <Text>Welcome</Text>
-        <Text>Welcome</Text>
-        <Text>Welcome</Text>
-        <Text>Welcome</Text>
-        <Text>Welcome</Text>
+      <View style={styles.welcomeContainer}>
+        <Image
+          style={{width: 320}}
+          source={ require('../img/BeThereLive_Logo_FIN.png') }
+        />
         <Button title="Take me inside!!!" onPress={navigate} />
       </View>
     )
