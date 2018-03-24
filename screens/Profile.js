@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ImageBackground, Image } from 'react-native';
 
-import TitleText from '../components/header/TitleText';
-import TopTitle from '../components/header/TopTitle';
+import { TopTitle, TitleText } from '../components/header';
+import { LoginForm } from '../components/body';
 
 import styles from '../style';
 
@@ -10,13 +10,13 @@ class Profile extends Component {
   render() {
     return (
       <View style={styles.profile}>
-        <TopTitle text={'PROFILE'} />
-        <TitleText text={'SIGN-IN'} />
-        <Text>Profile</Text>
-        <Text>Profile</Text>
-        <Text>Profile</Text>
-        <Text>Profile</Text>
-        <Text>Profile</Text>
+          <TopTitle text={'PROFILE'} />
+          <TitleText text={'SIGN-IN'} />
+          <ImageBackground
+            style={styles.signInBg}
+            source={require('../img/Image_1_Sign-In.png')}>
+          <LoginForm />
+          </ImageBackground>
       </View>
     )
   }

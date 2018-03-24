@@ -5,7 +5,7 @@ import { TabNavigator, StackNavigator } from 'react-navigation';
 import { Provider } from 'react-redux';
 import { Notifications } from 'expo';
 
-
+import firebase from 'firebase';
 import store from './store';
 
 import WelcomeScreen from './screens/Welcome';
@@ -15,8 +15,13 @@ import ArtistsScreen from './screens/Artists';
 import VenueScreen from './screens/Venue';
 import AlertFeedScreen from './screens/AlertFeed';
 
+import {firebaseInit} from './dontUpload';
 
 export default class App extends React.Component {
+  componentWillMount() {
+        firebase.initializeApp(firebaseInit);
+  }
+
   render() {
     const MainNavigator = TabNavigator({
       welcome: { screen: WelcomeScreen},
