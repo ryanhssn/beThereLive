@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Text, View, Button, Image } from 'react-native';
 
+import Button_bh from '../components/body/Button';
+
 import styles from '../style';
 
 class Welcome extends Component {
@@ -16,7 +18,12 @@ class Welcome extends Component {
           style={{width: 320}}
           source={ require('../img/BeThereLive_Logo_FIN.png') }
         />
-        <Button title="Take me inside!!!" onPress={navigate} />
+        <Button_bh
+          title="Take me inside!!!"
+          width="150"
+          active={true}
+          onPress={navigate}
+         />
       </View>
     )
   }
