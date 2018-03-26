@@ -1,5 +1,15 @@
 {
   "expo": {
-    "sdkVersion": "25.0.0"
+   "name": "Be There Live",
+   "icon": "./logo.png",
+   "version": "1.0.0",
+   "slug": "be-there-live",
+   "sdkVersion": "25.0.0",
+   "ios": {
+     "bundleIdentifier": "com.bilalhssn.betherelive"
+   },
+   "android": {
+     "package": "com.bilalhssn.betherelive"
+   }
   }
 }
