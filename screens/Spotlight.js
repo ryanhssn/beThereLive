@@ -3,17 +3,32 @@ import { Text, View, ScrollView, Image } from 'react-native';
 import { LinearGradient} from 'expo';
 
 import { TopTitle, TitleText } from '../components/header';
+import Carousel from '../components/body/Carousel';
 import styles from '../style';
 
 class Spotlight extends Component {
+
+  static navigationOptions = {
+      title: 'SPOTLIGHT',
+    };
+
   render() {
+
+    const photos = [
+      { image: require('../img/Carousel.png'), title: 'Largo At The Caronet' },
+      { image: require('../img/Carousel1.png'), title: 'The Wittern'},
+      { image: require('../img/Carousel.png'), title: 'Largo At The Caronet' },
+      { image: require('../img/Carousel1.png'), title: 'The Wittern' },
+      { image: require('../img/Carousel.png'), title: 'Largo At The Caronet' },
+    ];
+
+
     return (
       <ScrollView style={[styles.profile, {flex: 1}]}>
           <TopTitle text={'ARTISTS'} />
           <TitleText text={'SPOTLIGHT'} />
-          <Image
-            style={styles.carousel}
-            source={require('../img/Carousel.png')} />
+              <Carousel photos={photos} hideCaption={true} />
+
 
             <ScrollView style={{flex:1}} horizontal={true}>
               <View style={localStyles.ticketPortal}>

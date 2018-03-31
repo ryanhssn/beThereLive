@@ -8,6 +8,9 @@ import Button_bh from '../components/body/Button';
 import styles from '../style';
 
 class Artists extends Component {
+  static navigationOptions = {
+      title: 'ARTISTS',      
+    };
   render() {
     return (
       <ScrollView style={[styles.profile, {flex: 1}]}>

@@ -7,6 +7,9 @@ import { LoginForm } from '../components/body';
 import styles from '../style';
 
 class Profile extends Component {
+  static navigationOptions = {
+      title: 'PROFILE',      
+    };
   render() {
     return (
       <View style={styles.profile}>
