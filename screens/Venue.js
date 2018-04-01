@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, ScrollView, Image, Dimensions, TouchableOpacity } from 'react-native';
 import { TopTitle, TitleText } from '../components/header';
 import Carousel from '../components/body/Carousel';
+import Triangle from '../components/body/Triangle';
 import styles from '../style';
 
 const {width, height} = Dimensions.get('window')
@@ -32,11 +33,7 @@ class Venue extends Component {
             <View style={localStyles.venueBlock}>
               <Text style={localStyles.venueTitle}>THE MINT</Text>
               <View style={localStyles.venueImageCont}>
-                <TouchableOpacity onPress={() => alert('triangle')} style={localStyles.triangle}>
-                <Image
-                  style={localStyles.addImage}
-                  source={require('../img/+.png')} />
-                </TouchableOpacity>
+                <Triangle />
                 <Image
                   style={localStyles.venueImage}
                   source={require('../img/Image_venues1.png')} />
@@ -45,11 +42,7 @@ class Venue extends Component {
             <View style={localStyles.venueBlock}>
               <Text style={localStyles.venueTitle}>THE MINT</Text>
               <View style={localStyles.venueImageCont}>
-                <TouchableOpacity onPress={() => alert('triangle')} style={localStyles.triangle}>
-                <Image
-                  style={localStyles.addImage}
-                  source={require('../img/+.png')} />
-                </TouchableOpacity>
+                <Triangle />
                 <Image
                   style={localStyles.venueImage}
                   source={require('../img/Image_venues2.png')} />
@@ -58,11 +51,7 @@ class Venue extends Component {
             <View style={localStyles.venueBlock}>
               <Text style={localStyles.venueTitle}>THE MINT</Text>
               <View style={localStyles.venueImageCont}>
-                <TouchableOpacity onPress={() => alert('triangle')} style={localStyles.triangle}>
-                <Image
-                  style={localStyles.addImage}
-                  source={require('../img/+.png')} />
-                </TouchableOpacity>
+                <Triangle />
                 <Image
                   style={localStyles.venueImage}
                   source={require('../img/Image_venues3.png')} />
@@ -71,11 +60,7 @@ class Venue extends Component {
             <View style={localStyles.venueBlock}>
               <Text style={localStyles.venueTitle}>THE MINT</Text>
               <View style={localStyles.venueImageCont}>
-                <TouchableOpacity onPress={() => alert('triangle')} style={localStyles.triangle}>
-                <Image
-                  style={localStyles.addImage}
-                  source={require('../img/+.png')} />
-                </TouchableOpacity>
+                <Triangle />
                 <Image
                   style={localStyles.venueImage}
                   source={require('../img/Image_venues4.png')} />

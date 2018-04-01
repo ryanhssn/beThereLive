@@ -8,7 +8,7 @@ import styles from '../style';
 
 class Profile extends Component {
   static navigationOptions = {
-      title: 'PROFILE',      
+      title: 'PROFILE',
     };
   render() {
     return (

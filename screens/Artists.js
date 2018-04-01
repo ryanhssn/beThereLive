@@ -4,21 +4,30 @@ import { Text, View, ScrollView, Image, Button } from 'react-native';
 import { LinearGradient} from 'expo';
 
 import { TopTitle, TitleText } from '../components/header';
+import Carousel from '../components/body/Carousel';
+import Triangle from '../components/body/Triangle';
 import Button_bh from '../components/body/Button';
 import styles from '../style';
 
 class Artists extends Component {
   static navigationOptions = {
-      title: 'ARTISTS',      
+      title: 'ARTISTS',
     };
   render() {
+    const photos = [
+      { image: require('../img/Image_art2.png'), title: 'Largo At The Caronet' },
+      { image: require('../img/Image_art1.png'), title: 'The Wittern'},
+      { image: require('../img/Image_art2.png'), title: 'Largo At The Caronet' },
+      { image: require('../img/Image_art1.png'), title: 'The Wittern' },
+      { image: require('../img/Image_art2.png'), title: 'Largo At The Caronet' },
+    ];
+
     return (
       <ScrollView style={[styles.profile, {flex: 1}]}>
           <TopTitle text={'ARTISTS'} />
           <TitleText text={'ARTISTS'} />
-          <Image
-            style={styles.carousel}
-            source={require('../img/Image_art2.png')} />
+          <Carousel photos={photos} hideCaption={true} />
+
 
             <View style={localStyles.descArtist}>
                 <Text style={localStyles.artistTitle}>JUDITH HILL</Text>
@@ -31,6 +40,7 @@ class Artists extends Component {
                 source={require('../img/Video_Main.png')} />
 
               <View style={localStyles.sideVideos}>
+                <Triangle title={"video"} />
                 <Image source={require('../img/Video_1.png')} />
                 <Image source={require('../img/Video_2.png')} />
                 <Image source={require('../img/Video_3.png')} />

@@ -10,6 +10,11 @@
    },
    "android": {
      "package": "com.bilalhssn.betherelive"
-   }
+   },
+   "splash": {
+      "backgroundColor": "#000000",
+      "image": "./logo.png",
+      "resizeMode": "contain",
+    },
   }
 }
